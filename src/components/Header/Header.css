@@ -1,23 +1,21 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 20px 40px;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding: 30px 30px;
     background: var(--soft);
     font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
     z-index: 100;
+    box-sizing: border-box;
 }
 
 .name-initials {
-    position: absolute;
-    left: 40px;
-
     font-weight: 600;
-    font-size: 18px;
+    font-size: 24px;
     letter-spacing: 2px;
     cursor: pointer;
-
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -41,17 +39,16 @@
 
 .hamburger {
     display: none;
-    position: absolute;
-    right: 40px;
     font-size: 26px;
     cursor: pointer;
     color: var(--navy);
 }
 
 .nav-links {
+    left: 0;
+    flex: 1;
     display: flex;
     justify-content: center;
-    width: 100%;
 }
 
 .nav-list {
@@ -91,30 +88,56 @@
     width: 100%;
 }
 
+.dark-mode-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--navy);
+    font-size: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+    color: var(--accent);
+    transform: scale(1.1);
+}
+
 @media (max-width: 768px) {
-    .name {
-        position: static;
+    .header {
+        position: fixed;
     }
 
-    .header {
-        justify-content: space-between;
-    }
-    
     .hamburger {
         display: block;
+        order: -1;
+    }
+
+    .name-initials {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .name-initials:hover {
+        transform: translateX(-50%) translateY(-2px);
+    }
+
+    .dark-mode-toggle {
+        margin-left: auto;
     }
 
     .nav-links {
         display: none;
         position: absolute;
-        max-width: calc(100vw - 40px);
-        overflow-x: hidden;
-        top: 40px;
-        right: 0px;
+        top: 90px;
+        width: 100%;
         background: var(--soft);
         padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     }
 
     .nav-links.active {
@@ -125,5 +148,4 @@
         flex-direction: column;
         gap: 18px;
     }
-
 }
