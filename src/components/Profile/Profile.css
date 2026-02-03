@@ -58,6 +58,51 @@
     transition: transform 0.3s ease;
 }
 
+.profile-contact {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.cv-button {
+    padding: 0.7rem 1.5rem;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    border-radius: 9999px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+} .cv-button:hover {
+    background-color: var(--accent);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    color: var(--accent);
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.social-icons a:hover {
+    background-color: var(--accent);
+    color: white;
+    transform: scale(1.1);
+}
+
 @media (max-width: 900px) {
     .profile {
         flex-direction: column;
@@ -82,5 +127,8 @@
 
     .profile-desc {
         font-size: 16px;
+    }
+    .profile-contact {
+        justify-content: center;
     }
 }
