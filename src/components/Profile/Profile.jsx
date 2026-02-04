@@ -4,8 +4,8 @@ import { MdOutlineEmail } from "react-icons/md";
 
 const Profile = () => {
     return (
-        <div className="profile">
-            <div className="info" id="home">
+        <div className="profile" id="home" >
+            <div className="info">
                 <div className="profile-name">Hi, I'm <b>Dran</b>!</div>
                 <div className="profile-title">Full Stack Developer</div>
                 <div className="profile-desc">

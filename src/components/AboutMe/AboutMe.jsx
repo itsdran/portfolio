@@ -6,7 +6,7 @@ import HobbyCard from '../HobbyCard/HobbyCard'
 
 const AboutMe = () => { 
     return (
-        <div className="about-me-container">
+        <div className="about-me-container" id="about">
             <h1>About Me</h1>
             <p>
                 Hello! I'm <b>Dranoel Rubio Flores</b>, or <strong>Dran</strong> for short, a passionate <i>full stack developer</i> from the Philippines, with a degree in Information Technology from PLM, Manila.

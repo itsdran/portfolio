@@ -7,8 +7,8 @@ const Header = () => {
     const [darkMode, setDarkMode] = useState(false);
 
     return (
-        <div className="header">
-            <div className="name-initials" href="#">DF</div>
+        <div className="header" id="header">
+            <div className="name-initials" href="#home">DF</div>
             <div className="hamburger" onClick={() => setOpen(!open)}>☰</div>
             <div className={`nav-links ${open ? "active" : ""}`}>
                 <ul className="nav-list">
