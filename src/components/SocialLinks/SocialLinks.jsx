@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
+import { FaLinkedinIn, FaGithub, FaFacebookMessenger } from 'react-icons/fa'
 import { MdOutlineEmail } from 'react-icons/md'
 
 const SocialLinks = () => {
@@ -11,6 +11,8 @@ const SocialLinks = () => {
                 title="GitHub"> <FaGithub /> </a>
             <a href="mailto:dranoelflores@gmail.com" 
                 title="Email" > <MdOutlineEmail /> </a>
+            <a href="" target="_blank" rel="noopener noreferrer"
+                title="Messenger"> <FaFacebookMessenger /> </a>
         </div>
     )
 }
