@@ -27,7 +27,7 @@ const Profile = () => {
             </div>
 
             <div className="profile-picture">
-                <img src="/profile-pic.png" alt="Profile Picture" oncontextmenu="return false;" />
+                <img src="/profile-pic.png" alt="Profile Picture"/>
             </div>
         </div>
     )

@@ -8,15 +8,16 @@ const Header = () => {
 
     return (
         <div className="header">
-            <div className="name-initials">DF</div>
+            <div className="name-initials" href="#">DF</div>
             <div className="hamburger" onClick={() => setOpen(!open)}>☰</div>
             <div className={`nav-links ${open ? "active" : ""}`}>
                 <ul className="nav-list">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contacts">Contact</a></li>
-                    <li><a href="/Dranoel_Rubio_Flores_Resume.pdf" download="Dranoel_Rubio_Flores_Resume.pdf">Download CV</a></li>
+                    <li><a href="#home" onClick={() => setOpen(!open)}>Home</a></li>
+                    <li><a href="#about" onClick={() => setOpen(!open)}>About Me</a></li>
+                    <li><a href="#projects" onClick={() => setOpen(!open)}>Projects</a></li>
+                    <li><a href="#contacts" onClick={() => setOpen(!open)}>Contact</a></li>
+                    <li><a href="/Dranoel_Rubio_Flores_Resume.pdf" download="Dranoel_Rubio_Flores_Resume.pdf" 
+                        onClick={() => setOpen(!open)}>Download CV</a></li>
                 </ul>
             </div>
             <button className="dark-mode-toggle" onClick={() => setDarkMode(prev => !prev)}>

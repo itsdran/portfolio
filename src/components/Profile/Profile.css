@@ -117,6 +117,11 @@
         width: 250px;
         height: 400px;
         order: -1;
+        margin: 50px;
+    }
+
+    .profile-picture img {
+        box-shadow: 0 8px 25px rgba(11, 25, 87, 0.15);
     }
 
     .profile-name {
@@ -129,6 +134,7 @@
 
     .profile-desc {
         font-size: 16px;
+        justify-content: center;
     }
     .profile-contact {
         justify-content: center;

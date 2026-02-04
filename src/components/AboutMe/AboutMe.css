@@ -1,0 +1,51 @@
+.about-me-container {
+    background: var(--soft);
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.about-me-container h1 {
+    font-size: 2.25rem;
+    margin-bottom: 20px;
+    color: var(--navy);
+    letter-spacing: 1px;
+}
+
+.about-me-container p {
+    max-width: 48rem;
+    font-size: 20px;
+    line-height: 1.7;
+    color: var(--navy);
+    opacity: 0.85;
+    margin-bottom: 50px;
+}
+
+.about-me-container p strong {
+    color: var(--accent);
+    font-weight: 700;
+} 
+
+.about-me-container strong {
+    color: var(--navy);
+    font-weight: 700;
+}
+
+.hobby-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 75%;
+    margin: 0 auto;
+    padding-top: 20px;
+    justify-items: center;
+}
