@@ -17,13 +17,13 @@
     font-size: 2.25rem;
     margin-bottom: 20px;
     color: var(--navy);
-    letter-spacing: 1px;
 }
 
 .about-me-container p {
     max-width: 48rem;
     font-size: 20px;
     line-height: 1.7;
+    letter-spacing: 1.2px;
     color: var(--navy);
     opacity: 0.85;
     margin-bottom: 50px;

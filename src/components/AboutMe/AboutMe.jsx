@@ -15,7 +15,7 @@ const AboutMe = () => {
             </p>
             <div className="hobby-cards">
                 <HobbyCard hobby="Web Development" image="/web-development.jpg" description="Building responsive web applications." />
-                <HobbyCard hobby="Drawing" image="/drawing.jpg" description="Creating digital and traditional artwork." />
+                <HobbyCard hobby="Drawing" image="/drawing.jpg" description="Creating traditional art pieces" />
                 <HobbyCard hobby="Gigs" image="/gigs.jpg" description="Live music at local venues and events." />
             </div>
         </div>

@@ -1,0 +1,18 @@
+import React from 'react'
+import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
+import { MdOutlineEmail } from 'react-icons/md'
+
+const SocialLinks = () => {
+    return (
+        <div className="social-icons">
+            <a href="https://www.linkedin.com/in/dranoelflores" target="_blank" rel="noopener noreferrer"
+                title="LinkedIn"> <FaLinkedinIn /> </a>
+            <a href="https://github.com/itsdran" target="_blank" rel="noopener noreferrer"
+                title="GitHub"> <FaGithub /> </a>
+            <a href="mailto:dranoelflores@gmail.com" 
+                title="Email" > <MdOutlineEmail /> </a>
+        </div>
+    )
+}
+
+export default SocialLinks

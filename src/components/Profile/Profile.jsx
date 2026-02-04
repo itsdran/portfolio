@@ -1,6 +1,7 @@
 import './Profile.css';
-import { FaFileDownload, FaLinkedinIn, FaGithub  } from "react-icons/fa";
-import { MdOutlineEmail } from "react-icons/md";
+import { FaFileDownload } from "react-icons/fa";
+
+import SocialLinks from '../SocialLinks/SocialLinks';
 
 const Profile = () => {
     return (
@@ -14,14 +15,7 @@ const Profile = () => {
                 <div className="profile-contact">
                     <a href="/resume.pdf" download="Dranoel_Rubio_Flores_Resume.pdf" className="cv-button" 
                         title="Download CV"> View CV <FaFileDownload /> </a>
-                    <div className="social-icons">
-                        <a href="https://www.linkedin.com/in/dranoelflores" target="_blank" rel="noopener noreferrer"
-                            title="LinkedIn"> <FaLinkedinIn /> </a>
-                        <a href="https://github.com/itsdran" target="_blank" rel="noopener noreferrer"
-                            title="GitHub"> <FaGithub /> </a>
-                        <a href="mailto:dranoelflores@gmail.com" 
-                            title="Email" > <MdOutlineEmail /> </a>
-                    </div>
+                    <SocialLinks />
                 </div>
 
             </div>
