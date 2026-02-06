@@ -14,9 +14,25 @@ body {
 
 h1 {
     letter-spacing: 3px;
-    color: var(--navy);
+    font-size: 3rem;
+    color: var(--accent);
     font-size: 36px;
     margin-bottom: 20px;
+} h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 5px;
+    letter-spacing: 0.3px;
+    transition: color 0.3s ease;
+} h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--navy);
+    opacity: 75%;
+    margin: 10px 0 5px 0px;
+    letter-spacing: 0.2px;
+    transition: color 0.3s ease;
 }
 
 p {

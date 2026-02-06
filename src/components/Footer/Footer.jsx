@@ -8,7 +8,7 @@ const Footer = () => {
 
     return (
         <div className="footer">
-            <p>&copy; {year} Dranoel Rubio Flores. All rights reserved.</p>
+            &copy; {year} Dranoel Rubio Flores. All rights reserved.
         </div>
     )
 }

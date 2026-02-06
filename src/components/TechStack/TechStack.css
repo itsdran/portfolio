@@ -1,20 +1,23 @@
 .tech-stack-container {
     padding: 80px 40px;
-    max-width: 48rem;
+    min-height: 100vh;
     margin: 0 auto;
+    background-color: var(--soft);
 }
 
 .tech-stack-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 42px;
     font-weight: 600;
-    color: var(--navy);
     text-align: center;
     margin-bottom: 50px;
     letter-spacing: -0.5px;
 }
 
 .tech-stack-content {
+    margin: 0 auto;
+    align-items: center;
+    max-width: 40rem;
     background: var(--soft);
     backdrop-filter: blur(10px);
     border-radius: 20px;

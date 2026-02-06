@@ -9,23 +9,7 @@
     padding-bottom: 80px;
 
     text-align: center;
-    padding: 100px 20px;
-}
-
-.about-me-container h1 {
-    font-size: 2.25rem;
-    margin-bottom: 20px;
-    color: var(--navy);
-}
-
-.about-me-container p {
-    max-width: 48rem;
-    font-size: 20px;
-    line-height: 1.7;
-    letter-spacing: 1.2px;
-    color: var(--navy);
-    opacity: 0.85;
-    margin-bottom: 50px;
+    padding: 50px 20px;
 }
 
 .about-me-container p strong {
@@ -44,7 +28,7 @@
     gap: 30px;
     width: 100%;
     max-width: 75%;
-    margin: 0 auto;
+    margin: 45px auto;
     padding-top: 20px;
     justify-items: center;
 }
