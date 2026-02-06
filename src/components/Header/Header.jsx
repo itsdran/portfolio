@@ -14,7 +14,7 @@ const Header = () => {
                 <ul className="nav-list">
                     <li><a href="#home" onClick={() => setOpen(!open)}>Home</a></li>
                     <li><a href="#about" onClick={() => setOpen(!open)}>About Me</a></li>
-                    <li><a href="#projects" onClick={() => setOpen(!open)}>Projects</a></li>
+                    <li><a href="#career" onClick={() => setOpen(!open)}>Career</a></li>
                     <li><a href="#contacts" onClick={() => setOpen(!open)}>Contact</a></li>
                     <li><a href="/Dranoel_Rubio_Flores_Resume.pdf" download="Dranoel_Rubio_Flores_Resume.pdf" 
                         onClick={() => setOpen(!open)}>Download CV</a></li>

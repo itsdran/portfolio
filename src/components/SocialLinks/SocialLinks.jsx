@@ -2,6 +2,8 @@ import React from 'react'
 import { FaLinkedinIn, FaGithub, FaFacebookMessenger } from 'react-icons/fa'
 import { MdOutlineEmail } from 'react-icons/md'
 
+import './SocialLinks.css'
+
 const SocialLinks = () => {
     return (
         <div className="social-icons">
