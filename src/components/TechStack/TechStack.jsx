@@ -57,6 +57,11 @@ const TechStack = () => {
                 { name: "Firebase", icon: <SiFirebase /> },
                 { name: "MongoDB", icon: <SiMongodb /> },
                 { name: "SQLite", icon: <SiSqlite /> },
+            ]
+        },
+        {
+            title: "Tools",
+            technologies: [
                 { name: "Git", icon: <FaGitAlt /> },
                 { name: "GitHub", icon: <FaGithub /> }
             ]
