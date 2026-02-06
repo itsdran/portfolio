@@ -1,11 +1,11 @@
 import React from 'react'
 import SocialLinks from '../SocialLinks/SocialLinks'
 
-import './ContactMe.css';
+import './Contact.css';
 
-const ContactMe = () => {
+const Contact = () => {
     return (
-        <div className="contact-me" id="contacts">
+        <div className="contact-me" id="contact">
             <h1>Contact Me</h1>
             <p>If you'd like to get in touch, feel free to reach out via email or connect with me on social media!</p>
             <SocialLinks />
@@ -13,4 +13,4 @@ const ContactMe = () => {
     )
 }
 
-export default ContactMe
+export default Contact

@@ -1,4 +1,4 @@
-.hobby-container {
+.card-container {
     border-radius: 25px;
     overflow: hidden;
 
@@ -9,7 +9,7 @@
     transition: transform 0.25s ease;
 }
 
-.hobby-container {
+.card-container {
     background: var(--soft);
     border-radius: 18px;
     overflow: hidden;
@@ -17,12 +17,12 @@
     transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-.hobby-container:hover {
+.card-container:hover {
     transform: translateY(-6px) scale(1.02); 
     box-shadow: 0 16px 40px rgba(0,0,0,0.12);
 }
 
-.hobby-image {
+.card-image {
     width: 100%;
     height: 250px;
     object-fit: cover;
@@ -30,8 +30,7 @@
     transition: transform 0.4s ease, filter 0.4s ease;
 }
 
-
-.hobby-content {
+.card-content {
     padding: 10px 30px 0px;
     margin: 0;
     display: flex;
@@ -40,7 +39,7 @@
     text-align: left;
 }
 
-.hobby-title {
+.card-title {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--navy);

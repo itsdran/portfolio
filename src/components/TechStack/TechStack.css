@@ -1,6 +1,6 @@
 .tech-stack-container {
     padding: 80px 40px;
-    min-height: 100vh;
+    min-height: 80vh;
     margin: 0 auto;
     background-color: var(--soft);
 }

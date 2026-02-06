@@ -1,10 +1,10 @@
 import React from 'react'
 
-import './AboutMe.css'
+import './About.css'
 
-import HobbyCard from '../HobbyCard/HobbyCard'
+import Card from '../Card/Card'
 
-const AboutMe = () => { 
+const About = () => { 
     return (
         <div className="about-me-container" id="about">
             <h1>About Me</h1>
@@ -14,12 +14,12 @@ const AboutMe = () => {
                 When I'm not coding, I love to draw, read, and go to gigs at local venues.
             </p>
             <div className="hobby-cards">
-                <HobbyCard hobby="Web Development" image="/web-development.jpg" description="Building responsive web applications." />
-                <HobbyCard hobby="Art and Stuff" image="/drawing.jpg" description="Drawing and writing art pieces" />
-                <HobbyCard hobby="Gigs" image="/gigs.jpg" description="Enjoying music at local venues and events and meeting new people." />
+                <Card title="Web Development" image="/web-development.jpg" description="Building responsive web applications." />
+                <Card title="Art and Stuff" image="/drawing.jpg" description="Drawing and writing art pieces" />
+                <Card title="Gigs" image="/gigs.jpg" description="Enjoying music at local venues and events and meeting new people." />
             </div>
         </div>
     )
 }
 
-export default AboutMe
+export default About

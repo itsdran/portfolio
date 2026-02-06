@@ -44,3 +44,9 @@ p {
     opacity: 0.85;
     margin-bottom: 50px;
 }
+
+@media (max-width: 900px) {
+    p {
+        font-size: 14px;
+    }
+}

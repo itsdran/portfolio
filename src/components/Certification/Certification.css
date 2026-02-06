@@ -1,0 +1,233 @@
+.certification-container {
+    padding: 0;
+    background: transparent;
+}
+
+.certificates-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Certificate Card */
+.certificate-card {
+    display: flex;
+    gap: 18px;
+    padding: 22px;
+    background: var(--bg);
+    border: 1px solid rgba(var(--accent-rgb, 100, 180, 255), 0.2);
+    border-radius: 14px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+.certificate-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border-color: var(--accent);
+}
+
+.certificate-icon {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--accent), rgba(var(--accent-rgb, 100, 180, 255), 0.7));
+    border-radius: 12px;
+    color: var(--bg);
+    font-size: 30px;
+    box-shadow: 0 4px 12px rgba(var(--accent-rgb, 100, 180, 255), 0.25);
+}
+
+.certificate-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.certificate-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--navy);
+    margin: 0;
+    letter-spacing: 0.2px;
+    line-height: 1.4;
+}
+
+.certificate-source {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--navy);
+    opacity: 0.7;
+    margin: 0;
+    letter-spacing: 0.2px;
+}
+
+.certificate-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.preview-button,
+.download-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    letter-spacing: 0.3px;
+}
+
+.preview-button {
+    background: transparent;
+    color: var(--accent);
+    border: 1.5px solid var(--accent);
+}
+
+.preview-button:hover {
+    background: var(--accent);
+    color: var(--bg);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(var(--accent-rgb, 100, 180, 255), 0.25);
+}
+
+.download-button {
+    background: var(--accent);
+    color: var(--bg);
+}
+
+.download-button:hover {
+    background: rgba(var(--accent-rgb, 100, 180, 255), 0.85);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(var(--accent-rgb, 100, 180, 255), 0.35);
+}
+
+/* Preview Modal */
+.preview-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+    animation: fadeIn 0.3s ease;
+}
+
+.preview-content {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    height: 90vh;
+    background: var(--bg);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.3s ease;
+}
+
+.close-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent);
+    color: var(--bg);
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.close-button:hover {
+    background: var(--navy);
+    transform: scale(1.1);
+}
+
+.pdf-preview {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .certificate-card {
+        flex-direction: column;
+        gap: 14px;
+        padding: 18px;
+    }
+
+    .certificate-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 26px;
+    }
+
+    .certificate-title {
+        font-size: 15px;
+    }
+
+    .certificate-source {
+        font-size: 12px;
+    }
+
+    .certificate-actions {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .preview-button,
+    .download-button {
+        width: 100%;
+        justify-content: center;
+        padding: 9px 14px;
+    }
+
+    .preview-content {
+        height: 85vh;
+    }
+}
