@@ -10,7 +10,6 @@ const Card = (props) => {
                 alt={props.title}
                 className="card-image"
             />
-
             <div className="card-content">
                 <h3 className="card-title">{props.title}</h3>
                 <p className="card-description">{props.description}</p>

@@ -9,13 +9,12 @@
     gap: 20px;
 }
 
-/* Certificate Card */
 .certificate-card {
     display: flex;
     gap: 18px;
     padding: 22px;
-    background: var(--bg);
-    border: 1px solid rgba(var(--accent-rgb, 100, 180, 255), 0.2);
+    background: var(--soft);
+    border: 2px solid rgba(var(--accent-rgb, 100, 180, 255), 0.2);
     border-radius: 14px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);

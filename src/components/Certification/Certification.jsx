@@ -24,14 +24,44 @@ const Certification = () => {
 
     const certificatesData = [
         {
-            title: "Google Data Analytics Certificate",
+            title: "Google Data Analytics Professional Certificate",
             source: "Google",
-            file: "/certificates/google-data-analytics-certificate.pdf"
+            file: "/certificates/Google_Data_Analytics.pdf"
         },
         {
-            title: "IBM Data Science Professional Certificate",
+            title: "Harnessing Python for Data Analysis Insights into Development and Best Practices",
+            source: "West Visayas State University",
+            file: "/certificates/WVSU_Data_Analysis.pdf"
+        },
+        {
+            title: "Data Analysis with Python: A Comprehensive Guide to Data Analysis and Visualization",
             source: "IBM",
-            file: "/certificates/ibm-data-science-professional-certificate.pdf"
+            file: "/certificates/IBM_Data_Analysis_with_Python.pdf"
+        },
+        {
+            title: "Data Visualization with Python",
+            source: "IBM",
+            file: "/certificates/IBM_Data_Visualization_with_Python.pdf"
+        },
+        {
+            title: "Python 101 for Data Science",
+            source: "IBM",
+            file: "/certificates/IBM_Data_Science_with_Python.pdf"
+        },
+        {
+            title: "Machine Learning with Python",
+            source: "IBM",
+            file: "/certificates/IBM_Machine_Learning_with_Python.pdf"
+        },
+        {
+            title: "Prompt Engineering for Everyone",
+            source: "IBM",
+            file: "/certificates/IBM_Prompt_Engineering.pdf"
+        },
+        {
+            title: "GitHub Copilot : Your Ultimate Tool for Accelerometing Developer Productivity",
+            source: "IBM",
+            file: "/certificates/Styava_GitHub_Copilot.pdf"
         }
     ];
 

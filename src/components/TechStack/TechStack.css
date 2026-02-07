@@ -21,7 +21,7 @@
     background: var(--soft);
     backdrop-filter: blur(10px);
     border-radius: 20px;
-    padding: 10px 50px;
+    padding: 40px 50px;
     border: 1px solid rgba(var(--accent-rgb, 100, 180, 255), 0.2);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
     display: grid;

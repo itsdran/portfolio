@@ -9,7 +9,7 @@ const Experience = () => {
             date: "September 2025 - PRESENT",
             position: "Aspiring Full Stack Developer",
             rolePlace: "Self-learning",
-            description: "Studied and practiced full stack development using React, Node.js, and MongoDB."
+            description: "Further developing my full stack development using the MERN Stack, Laverel (PHP), and Django. I am also developing and deploying personal projects to apply my skills and build a portfolio to showcase my work to potential employers."
         },
         {
             date: "September 2025 - PRESENT",
@@ -21,25 +21,25 @@ const Experience = () => {
             date: "February - March 2025",
             position: "Machine Learning/Python Developer Intern",
             rolePlace: "Linoflap Technology Philippines Inc.",
-            description: "Collaborated with a team to integrate ML models into existing applications, enhancing functionality and user experience. Performed and developed Python automation scripts for data preprocessing and analysis, model training, evaluation and optimization to improve accuracy, inference speed, and overall system performance. Assisted in deploying ML models into the production environment through Rest APIs and real-time inference pipelines. Collaborated with cross-functional teams to troubleshoot, debug, and fine-tune machine learning modules for improved system reliability."
+            description: "During my internship, I've developed CV and ML models, wrote automation scripts to streamline data processing using Python. "
         }, 
         {
             date: "July 2023 - April 2024",
             position: "Customer Service Associate",
             rolePlace: "Qualfon Manila",
-            description: "While being a student, I also worked as a Customer Service Associate at Qualfon Manila. In this role, I handled customer inquiries, resolved issues, and provided technical support via phone and email. Communicated and educated users on preventive measures against cybersecurity threats such as identity theft and phishing scams, using data-informed risk assessments to deliver appropriate solutions. This experience helped me develop strong communication skills, problem-solving abilities, and the capacity to work effectively in a fast-paced environment."
+            description: "While being a student, I also worked where I provided technical support and assistance to customers, advised how to deal with cybersecurity threats like identity theft and fraud."
         },
         {
             date: "2021 - 2025",
             position: "Bachelor of Science in Information Technology",
             rolePlace: "Pamantasan ng Lungsod ng Maynila",
-            description: "Studied core information technology topics like database management, data structures, software engineering, and algorithms, and AI. Throughout the course, I worked on various projects like IoT, ML, AI, web applications, database management systems, and mobile applications. These academic projects helped me develop practical skills in programming, problem-solving, and teamwork. I've developed a strong foundation in IT principles and practices, preparing me for a career in the tech industry."
+            description: "Studied core information technology topics like database management, data structures, software engineering, and algorithms, and AI."
         },
         {
             date: "2018 - 2020",
             position: "Information and Communications Technology",
             rolePlace: "Philippine Christian University",
-            description: "Studied the core fundamentals of programming, and media technologies. Gained practical experience through projects and internships, developing skills in problem-solving, teamwork, and communication."
+            description: "Studied the core fundamentals of programming, and media technologies."
         }
     ]
 
