@@ -21,7 +21,7 @@ const Experience = () => {
             date: "February - March 2025",
             position: "Machine Learning/Python Developer Intern",
             rolePlace: "Linoflap Technology Philippines Inc.",
-            description: "During my internship, I've developed CV and ML models, wrote automation scripts to streamline data processing using Python. "
+            description: "During my internship, I've developed CV and ML models, wrote automation scripts to streamline data processing using Python."
         }, 
         {
             date: "July 2023 - April 2024",

@@ -1,0 +1,443 @@
+.projects-container {
+    padding: 80px 60px;
+    max-width: 56rem;
+    margin: 0 auto;
+    background: var(--soft);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.project-card {
+    background: var(--soft);
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid rgba(var(--soft-rgb, 100, 180, 255), 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    border-color: var(--soft);
+}
+
+.project-image-container {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.05);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.view-project {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--bg);
+    background: var(--accent);
+    padding: 12px 24px;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+}
+
+.project-content {
+    padding: 28px;
+}
+
+.project-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 12px;
+    letter-spacing: 0.3px;
+}
+
+.project-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--navy);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    min-height: 60px;
+}
+
+.project-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.project-tech-icons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.tech-icon {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--accent-rgb, 100, 180, 255), 0.15);
+    border-radius: 50%;
+    color: var(--accent);
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.tech-icon:hover {
+    background: var(--accent);
+    color: var(--navy);
+    transform: scale(1.1);
+}
+
+.project-links {
+    display: flex;
+    gap: 12px;
+}
+
+.project-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    letter-spacing: 0.3px;
+}
+
+.live-link {
+    background: var(--accent);
+    color: var(--navy);
+}
+
+.live-link:hover {
+    background: rgba(var(--accent-rgb, 100, 180, 255), 0.85);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(var(--accent-rgb, 100, 180, 255), 0.4);
+}
+
+.github-link {
+    background: transparent;
+    color: var(--accent);
+    border: 1.5px solid var(--accent);
+}
+
+.github-link:hover {
+    background: var(--accent);
+    color: var(--navy);
+    transform: translateY(-2px);
+}
+
+.project-preview-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+    animation: fadeIn 0.3s ease;
+}
+
+.project-preview-content {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    max-height: 90vh;
+    background: var(--soft);
+    border-radius: 20px;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    animation: slideUp 0.3s ease;
+    border: 2px solid var(--bg);
+}
+
+.project-close-button {
+    position: sticky;
+    top: 16px;
+    right: 16px;
+    float: right;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent);
+    color: var(--navy);
+    border: none;
+    border-radius: 50%;
+    font-size: 26px;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.project-close-button:hover {
+    background: var(--bg);
+    transform: scale(1.1);
+}
+
+.preview-image-container {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.preview-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.preview-details {
+    padding: 40px;
+}
+
+.preview-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 16px;
+    letter-spacing: 0.3px;
+}
+
+.preview-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--navy);
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.preview-tech {
+    margin-bottom: 30px;
+}
+
+.preview-tech h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 16px;
+    letter-spacing: 0.3px;
+}
+
+.preview-tech-icons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.preview-tech-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--accent-rgb, 100, 180, 255), 0.15);
+    border-radius: 50%;
+    color: var(--accent);
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+.preview-tech-icon:hover {
+    background: var(--accent);
+    color: var(--navy);
+    transform: scale(1.1);
+}
+
+.preview-links {
+    display: flex;
+    gap: 16px;
+}
+
+.preview-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 24px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    letter-spacing: 0.3px;
+}
+
+.preview-link.live-link {
+    background: var(--accent);
+    color: var(--navy);
+}
+
+.preview-link.live-link:hover {
+    background: rgba(var(--accent-rgb, 100, 180, 255), 0.85);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(var(--accent-rgb, 100, 180, 255), 0.4);
+}
+
+.preview-link.github-link {
+    background: transparent;
+    color: var(--accent);
+    border: 2px solid var(--accent);
+}
+
+.preview-link.github-link:hover {
+    background: var(--accent);
+    color: var(--navy);
+    transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .projects-container {
+        padding: 60px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        padding: 60px 30px;
+    }
+
+    .project-image-container {
+        height: 220px;
+    }
+
+    .project-content {
+        padding: 24px;
+    }
+
+    .project-title {
+        font-size: 20px;
+    }
+
+    .project-description {
+        font-size: 13px;
+        min-height: auto;
+    }
+
+    .tech-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+    }
+
+    .project-links {
+        flex-direction: column;
+    }
+
+    .project-link {
+        justify-content: center;
+    }
+
+    .preview-details {
+        padding: 30px 24px;
+    }
+
+    .preview-title {
+        font-size: 26px;
+    }
+
+    .preview-description {
+        font-size: 14px;
+    }
+
+    .preview-links {
+        flex-direction: column;
+    }
+
+    .preview-link {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-container {
+        padding: 50px 20px;
+    }
+
+    .project-title {
+        font-size: 18px;
+    }
+
+    .preview-title {
+        font-size: 22px;
+    }
+}

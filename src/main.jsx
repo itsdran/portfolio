@@ -10,6 +10,7 @@ import About from './components/About/About'
 import Career from './components/Career/Career'
 import TechStack from './components/TechStack/TechStack'
 import Contact from './components/Contact/Contact'
+import Project from './components/Project/Project'
 
 createRoot(document.getElementById('root')).render(
         <StrictMode>
@@ -17,6 +18,7 @@ createRoot(document.getElementById('root')).render(
         <Profile />
         <About />
         <Career />
+        <Project />
         <Contact />
         <TechStack />
         <Footer />
