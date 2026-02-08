@@ -55,7 +55,6 @@ const TechStack = () => {
             technologies: [
                 { name: "Git", icon: <FaGitAlt /> },
                 { name: "GitHub", icon: <FaGithub /> },
-                { name: "GitHub", icon: <FaGithub /> }
             ]
         },
         {

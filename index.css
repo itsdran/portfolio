@@ -12,6 +12,13 @@ body {
     font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
 }
 
+body.dark {
+    --bg: #0B1020; /* Light background color */
+    --navy: #E6D8C7; /* Font color */
+    --accent: #5784E6; /* Accent color */
+    --soft: #151A2E; /* Background color */
+}
+
 h1 {
     letter-spacing: 3px;
     font-size: 3rem;

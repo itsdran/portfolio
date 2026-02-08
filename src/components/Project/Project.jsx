@@ -24,7 +24,8 @@ const Project = () => {
             fullDescription: 'This portfolio website is built using React and Tailwind CSS, featuring a clean and modern design. It includes sections for my profile, about me, career history, projects, contact information, and tech stack. The website is fully responsive and optimized for performance.',
             technologies: [
                 <SiReact />,
-                <SiTailwindcss />
+                <FaHtml5 />,
+                <FaCss3Alt />
             ],
             liveLink: '/',
             githubLink: 'https://github.com/itsdran/portfolio'
@@ -79,7 +80,7 @@ const Project = () => {
             <div className="projects-container">
                 <div className="career-header">
                     <h1>My small colection of recent projects</h1>
-                    <p>     These are my personal projects that aimed to address and/or solve my personal needs. Hope it's helpful!   </p>
+                    <p>     These are some of my recent personal projects that aimed to address and/or solve my personal needs. Hope it's helpful!   </p>
                 </div>
                 <div className="projects-grid">
                     {projectsData.map((project, index) => (

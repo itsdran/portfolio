@@ -7,7 +7,7 @@ const Experience = () => {
     const experienceData = [
         {
             date: "September 2025 - PRESENT",
-            position: "Aspiring Full Stack Developer",
+            position: "Full Stack Developer",
             rolePlace: "Self-learning",
             description: "Further developing my full stack development using the MERN Stack, Laverel (PHP), and Django. I am also developing and deploying personal projects to apply my skills and build a portfolio to showcase my work to potential employers."
         },
@@ -15,7 +15,7 @@ const Experience = () => {
             date: "September 2025 - PRESENT",
             position: "Data Analyst",
             rolePlace: "Self-learning",
-            description: "Studied and practiced data analysis using Python, SQL, and visualization tools like Tableau and Power BI."
+            description: "Studied and practiced data analysis using Python, SQL, and visualization tools like Tableau and Power BI. "
         },
         {
             date: "February - March 2025",

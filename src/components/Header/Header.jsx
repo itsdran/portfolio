@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaSun, FaMoon } from 'react-icons/fa';
 import './Header.css';
 
 const Header = () => {
     const [open, setOpen] = useState(false);
     const [darkMode, setDarkMode] = useState(false);
+
+    useEffect(() => {
+        document.body.classList.toggle("dark", darkMode);
+    }, [darkMode]);
 
     return (
         <div className="header" id="header">

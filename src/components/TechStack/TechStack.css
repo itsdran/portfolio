@@ -38,7 +38,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 600;
-    color: var(--accent);
+    color: var(--navy);
     margin-bottom: 20px;
     letter-spacing: 0.5px;
     display: flex;
@@ -69,11 +69,6 @@
     font-size: 40px;
     color: var(--navy);
     transition: all 0.2s ease;
-}
-
-.tech-item:hover .tech-icon {
-    transform: scale(1.1);
-    color: var(--accent);
 }
 
 .tech-name {
