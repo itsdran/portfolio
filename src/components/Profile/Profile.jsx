@@ -25,7 +25,7 @@ const Profile = ({ darkMode }) => {
                     I'm a learning Full Stack Developer with a passion for creating dynamic and responsive web applications.
                 </div>
                 <div className="profile-contact">
-                    <a href="/resume.pdf" download="Dranoel_Rubio_Flores_Resume.pdf" className="cv-button" 
+                    <a href="/Dranoel_Rubio_Flores_Resume.pdf" download="Dranoel_Rubio_Flores_Resume.pdf" className="cv-button" 
                         title="Download CV"> View CV <FaFileDownload /> </a>
                     <SocialLinks />
                 </div>

@@ -62,6 +62,11 @@ const Certification = () => {
             title: "GitHub Copilot : Your Ultimate Tool for Accelerometing Developer Productivity",
             source: "IBM",
             file: "/certificates/Styava_GitHub_Copilot.pdf"
+        },
+        {
+            title: "Blueprints of Innovation: Understanding Software Engineering and System Architecture",
+            source: "Crack & Stack",
+            file: "/certificates/C&T_Software_Engineering.pdf"
         }
     ];
 
