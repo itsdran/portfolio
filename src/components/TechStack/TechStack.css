@@ -112,6 +112,7 @@
 /* Responsive Design */
 @media (max-width: 968px) {
     .tech-stack-content {
+        max-width: 75%;
         grid-template-columns: 1fr;
         gap: 35px;
         padding: 35px 40px;
