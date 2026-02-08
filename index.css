@@ -14,7 +14,6 @@ body.dark {
     --shadow-color: rgba(255, 255, 255, 0.15); /* dark mode shadow */
 }
 
-
 body,
 body * {
     transition:
