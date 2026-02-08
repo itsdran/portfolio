@@ -2,17 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { FaSun, FaMoon } from 'react-icons/fa';
 import './Header.css';
 
-const Header = () => {
+const Header = ({ darkMode, setDarkMode }) => {
     const [open, setOpen] = useState(false);
-    const [darkMode, setDarkMode] = useState(false);
-
-    useEffect(() => {
-        document.body.classList.toggle("dark", darkMode);
-    }, [darkMode]);
 
     return (
         <div className="header" id="header">
-            <div className="name-initials" href="#home">DF</div>
+            <div className="name-initials"><a href="#home" className="name-initials">DF</a></div>
             <div className="hamburger" onClick={() => setOpen(!open)}>☰</div>
             <div className={`nav-links ${open ? "active" : ""}`}>
                 <ul className="nav-list">

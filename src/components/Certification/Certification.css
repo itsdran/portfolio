@@ -17,12 +17,12 @@
     border: 2px solid rgba(var(--accent-rgb, 100, 180, 255), 0.2);
     border-radius: 14px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 12px 35px var(--shadow-color);
 }
 
 .certificate-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 12px 35px var(--shadow-color);
     border-color: var(--accent);
 }
 
@@ -37,7 +37,7 @@
     border-radius: 12px;
     color: var(--bg);
     font-size: 30px;
-    box-shadow: 0 4px 12px rgba(var(--accent-rgb, 100, 180, 255), 0.25);
+    box-shadow: 0 12px 35px var(--shadow-color);
 }
 
 .certificate-content {
@@ -99,7 +99,7 @@
     background: var(--accent);
     color: var(--bg);
     transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(var(--accent-rgb, 100, 180, 255), 0.25);
+    box-shadow: 0 12px 35px var(--shadow-color);
 }
 
 .download-button {
@@ -110,7 +110,7 @@
 .download-button:hover {
     background: rgba(var(--accent-rgb, 100, 180, 255), 0.85);
     transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(var(--accent-rgb, 100, 180, 255), 0.35);
+    box-shadow: 0 12px 35px var(--shadow-color);
 }
 
 /* Preview Modal */
@@ -194,10 +194,11 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .certificate-card {
+    .certification-container {
         flex-direction: column;
         gap: 14px;
         padding: 18px;
+        margin: 0 auto;
     }
 
     .certificate-icon {
@@ -227,6 +228,6 @@
     }
 
     .preview-content {
-        height: 85vh;
+        height: 60vh;
     }
 }

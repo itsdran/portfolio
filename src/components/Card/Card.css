@@ -5,7 +5,7 @@
     width: 100%;
     max-width: 550px;
 
-    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    box-shadow: 0 12px 35px var(--shadow-color);
     transition: transform 0.25s ease;
 }
 
@@ -19,7 +19,7 @@
 
 .card-container:hover {
     transform: translateY(-6px) scale(1.02); 
-    box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+    box-shadow: 0 12px 35px var(--shadow-color);
 }
 
 .card-image {

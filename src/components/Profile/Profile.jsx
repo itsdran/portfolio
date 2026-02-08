@@ -1,9 +1,21 @@
-import './Profile.css';
+import { useState, useEffect } from "react";
 import { FaFileDownload } from "react-icons/fa";
 
 import SocialLinks from '../SocialLinks/SocialLinks';
 
-const Profile = () => {
+import './Profile.css';
+
+const Profile = ({ darkMode }) => {
+
+    const [imgSrc, setImgSrc] = useState("/profile-pic-light.png");
+
+    useEffect(() => {
+        const newSrc = darkMode
+            ? "/profile-pic-dark.jpg"
+            : "/profile-pic-light.png";
+        setImgSrc(newSrc);
+    }, [darkMode]);
+
     return (
         <div className="profile" id="home" >
             <div className="info">
@@ -21,7 +33,11 @@ const Profile = () => {
             </div>
 
             <div className="profile-picture">
-                <img src="/profile-pic.png" alt="Profile Picture"/>
+                <img
+                    src={imgSrc}
+                    alt="Profile"
+                    className="profile-img"
+                />
             </div>
         </div>
     )

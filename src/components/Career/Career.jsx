@@ -6,12 +6,12 @@ import './Career.css';
 const Career = ({ experienceData, certificatesData }) => {
     return (
         <>
-            <div className="career-header">
+            <div className="career-header" id="career">
                 <h1>My journey report</h1>
                 <p>     I've had the opportunity to work on a variety of settings - from small personal projects to internships. 
                         I've gained experience in different areas of software development. Here's the timeline of my journey!</p>
             </div>
-            <div className="career-container" id="career">
+            <div className="career-container">
                 <div className="career-columns">
                     <div className="experience-column">
                         <div className="column-header">

@@ -18,12 +18,12 @@
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     border: 2px solid rgba(var(--soft-rgb, 100, 180, 255), 0.1);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 12px 35px var(--shadow-color);
 }
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 12px 35px var(--shadow-color);
     border-color: var(--soft);
 }
 
@@ -156,7 +156,7 @@
 .live-link:hover {
     background: rgba(var(--accent-rgb, 100, 180, 255), 0.85);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(var(--accent-rgb, 100, 180, 255), 0.4);
+    box-shadow: 0 12px 35px var(--shadow-color);
 }
 
 .github-link {
@@ -194,7 +194,7 @@
     background: var(--soft);
     border-radius: 20px;
     overflow-y: auto;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 12px 35px var(--shadow-color);
     animation: slideUp 0.3s ease;
     border: 2px solid var(--bg);
 }
@@ -217,7 +217,7 @@
     cursor: pointer;
     z-index: 10;
     transition: all 0.2s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 35px var(--shadow-color);
 }
 
 .project-close-button:hover {
@@ -324,7 +324,7 @@
 .preview-link.live-link:hover {
     background: rgba(var(--accent-rgb, 100, 180, 255), 0.85);
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(var(--accent-rgb, 100, 180, 255), 0.4);
+    box-shadow: 0 12px 35px var(--shadow-color);
 }
 
 .preview-link.github-link {
@@ -361,6 +361,10 @@
 
 /* Responsive Design */
 @media (max-width: 968px) {
+    .project-card {
+        max-width: 75%;
+        margin: 0 auto;
+    }
     .projects-grid {
         grid-template-columns: 1fr;
         gap: 30px;

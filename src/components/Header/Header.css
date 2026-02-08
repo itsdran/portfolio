@@ -1,3 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#home,
+#about,
+#career,
+#contact {
+    scroll-margin-top: 95px;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -61,7 +72,7 @@
     margin: 0;
 }
 
-.nav-list a {
+.nav-list a, a{
     position: relative;
     text-decoration: none;
     color: var(--navy);
@@ -139,7 +150,7 @@
         width: 100%;
         background: var(--soft);
         padding: 20px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 12px 35px var(--shadow-color);
     }
 
     .nav-links.active {

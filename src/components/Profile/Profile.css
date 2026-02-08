@@ -52,8 +52,8 @@
 .profile-picture img {
     width: 100%;
     height: 100%;
-    box-shadow: 0 12px 35px rgba(11, 25, 87, 0.15);
-    transition: transform 0.3s ease;
+    box-shadow: 0 12px 35px var(--shadow-color);
+    transition: opacity 2s ease, filter 0.35s ease;
 }
 
 .profile-picture img:hover {
@@ -100,7 +100,7 @@
     }
 
     .profile-picture img {
-        box-shadow: 0 8px 25px rgba(11, 25, 87, 0.15);
+        box-shadow: 0 12px 35px var(--shadow-color);
     }
 
     .profile-name {
