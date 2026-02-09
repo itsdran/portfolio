@@ -13,3 +13,13 @@
     padding: 80px 20px;
     gap: 18px;
 }
+
+@media screen and (max-width: 768px) {
+    .contact-me {
+        padding: 60px 15px;
+        gap: 14px;
+        max-width: 75%;
+        margin: 0 auto;
+    }
+    
+}

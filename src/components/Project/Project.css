@@ -372,6 +372,7 @@
 
     .projects-container {
         padding: 60px 40px;
+        max-width: 75%;
     }
 }
 
@@ -435,6 +436,8 @@
 @media (max-width: 480px) {
     .projects-container {
         padding: 50px 20px;
+        max-width: 75%;
+
     }
 
     .project-title {

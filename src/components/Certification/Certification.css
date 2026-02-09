@@ -133,7 +133,7 @@
     position: relative;
     width: 100%;
     max-width: 900px;
-    height: 90vh;
+    height: 75%;
     background: var(--bg);
     border-radius: 16px;
     overflow: hidden;

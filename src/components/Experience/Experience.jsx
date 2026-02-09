@@ -9,19 +9,19 @@ const Experience = () => {
             date: "September 2025 - PRESENT",
             position: "Full Stack Developer",
             rolePlace: "Self-learning",
-            description: "Further developing my full stack development using the MERN Stack, Laverel (PHP), and Django. I am also developing and deploying personal projects to apply my skills and build a portfolio to showcase my work to potential employers."
+            description: "Further developing my full stack development using the MERN Stack, Laravel (PHP), and Django. I am also developing and deploying personal projects to apply my skills and build a portfolio to showcase my work to potential employers."
         },
         {
             date: "September 2025 - PRESENT",
             position: "Data Analyst",
             rolePlace: "Self-learning",
-            description: "Studied and practiced data analysis using Python, SQL, and visualization tools like Tableau and Power BI. "
+            description: "Studied and practiced data analysis using MS Excel, R Programming, Python, SQL, and visualization tools like Tableau and Power BI. "
         },
         {
             date: "February - March 2025",
             position: "Machine Learning/Python Developer Intern",
             rolePlace: "Linoflap Technology Philippines Inc.",
-            description: "During my internship, I've developed CV and ML models, wrote automation scripts to streamline data processing using Python."
+            description: "During my internship, I've developed CV and ML models, wrote automation scripts to streamline data processing using Python. Gained hands-on experience in machine learning, model training, and APIs."
         }, 
         {
             date: "July 2023 - April 2024",

@@ -11,9 +11,9 @@ const SocialLinks = () => {
                 title="LinkedIn"> <FaLinkedinIn /> </a>
             <a href="https://github.com/itsdran" target="_blank" rel="noopener noreferrer"
                 title="GitHub"> <FaGithub /> </a>
-            <a href="mailto:dranoelflores@gmail.com" 
+            <a href="mailto:dranoelflores@gmail.com" target="_blank" rel="noopener noreferrer"
                 title="Email" > <MdOutlineEmail /> </a>
-            <a href="" target="_blank" rel="noopener noreferrer"
+            <a href="https://m.me/drannnf" target="_blank" rel="noopener noreferrer"
                 title="Messenger"> <FaFacebookMessenger /> </a>
         </div>
     )

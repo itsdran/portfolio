@@ -1,6 +1,6 @@
 .career-container {
     padding: 50px 60px;
-    max-width: 1400px;
+    max-width: 75%;
     margin: 0 auto;
     background: var(--soft);
     min-height: 100vh;
@@ -66,6 +66,10 @@
 @media (max-width: 968px) {
     .career-container {
         padding: 60px 40px;
+    }
+    .career-header {
+        max-width: 75%;
+        padding-bottom: 0px;
     }
 
     .column-header p {

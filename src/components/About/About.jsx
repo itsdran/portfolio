@@ -9,9 +9,9 @@ const About = () => {
         <div className="about-me-container" id="about">
             <h1>About Me</h1>
             <p>
-                Hello! I'm <strong>Dranoel Rubio Flores</strong>, or <b>Dran</b> for short, a passionate <i>full stack developer</i> from the Philippines, with a degree in Information Technology from PLM, Manila.
-                I'm enjoy developing back-to-back web applications using technologies like MERN Stack, PHP, Django, and Python.
-                When I'm not coding, I love to draw, read, and go to gigs at local venues.
+                Hello! I'm <strong>Dranoel Rubio Flores</strong>, or <b>Dran</b> for short, a passionate <i>full-stack developer</i> from the Philippines, with a degree in Information Technology from PLM, Manila.
+                I enjoy developing back-to-back web applications using technologies like MERN Stack, PHP, Django, and Python.
+                When I'm not coding, I love to draw, read, work out, and go to gigs at local venues.
             </p>
             <div className="hobby-cards">
                 <Card title="Web Development" image="/web-development.jpg" description="Building responsive web applications." />

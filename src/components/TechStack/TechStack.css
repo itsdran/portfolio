@@ -17,7 +17,7 @@
 .tech-stack-content {
     margin: 0 auto;
     align-items: center;
-    max-width: 40rem;
+    max-width: 55%;
     background: var(--soft);
     backdrop-filter: blur(10px);
     border-radius: 20px;
@@ -48,7 +48,7 @@
 .tech-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px 5px;
+    gap: 10px 0px;
 }
 
 .tech-item {
@@ -115,7 +115,7 @@
         max-width: 75%;
         grid-template-columns: 1fr;
         gap: 35px;
-        padding: 35px 40px;
+        padding: 35px 20px;
     }
 }
 
@@ -140,7 +140,7 @@
 
     .tech-grid {
         grid-template-columns: repeat(3, 1fr);
-        gap: 16px;
+        gap: 10px;
         row-gap: 20px;
     }
 
