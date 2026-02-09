@@ -1,6 +1,6 @@
 .projects-container {
     padding: 80px 0px;
-    max-width: 100%;
+    max-width: 75%;
     margin: 0 auto;
     background: var(--soft);
 }
@@ -382,10 +382,8 @@
 
 @media (max-width: 768px) {
     .projects-container {
-        padding: 60px 30px;
-    }
-    .career-header {
-        max-width: 100%;
+        padding: 0px 30px;
+        max-width: 75%;
     }
 
     .project-image-container {

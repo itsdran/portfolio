@@ -67,14 +67,6 @@
     .career-container {
         padding: 60px 40px;
     }
-    .career-header {
-        max-width: 75%;
-        padding-bottom: 0px;
-    }
-
-    .column-header p {
-        max-width: 75%;
-    }
 
     .career-columns {
         grid-template-columns: 1fr;
@@ -117,8 +109,8 @@
         padding: 60px 30px;
     }
 
-    .column-header p {
-        max-width: 75%;
+    .career-header {
+        padding: 0 12.5%;
     }
 
     .career-columns {
@@ -148,7 +140,7 @@
         padding: 50px 20px;
     }
 
-    .column-header p {
+    .column-header {
         max-width: 75%;
     }
 
