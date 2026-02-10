@@ -26,7 +26,7 @@ const Profile = ({ darkMode }) => {
                 </div>
                 <div className="profile-contact">
                     <a href="/Dranoel_Rubio_Flores_Resume.pdf" download="Dranoel_Rubio_Flores_Resume.pdf" className="cv-button" 
-                        title="Download CV"> Download CV <FaFileDownload /> </a>
+                        title="Download CV"> View CV <FaFileDownload /> </a>
                     <SocialLinks />
                 </div>
             </div>

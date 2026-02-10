@@ -78,7 +78,7 @@ const Project = () => {
     return (
         <>
             <div className="career-header">
-                        <h1>My small collection of recent projects</h1>
+                        <h1>My recent projects</h1>
                         <p>These are some of my recent personal projects that aimed to address and/or solve my personal needs. Hope it's helpful!   </p>
             </div>
             <div className="projects-container">
