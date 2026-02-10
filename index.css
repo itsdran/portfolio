@@ -1,17 +1,17 @@
 :root {
-    --bg: #E6D8C7;
+    --bg: #E6D8C7; 
     --navy: #0B1957;
-    --accent: #5784E6;
-    --soft: #F8F0E5;
-    --shadow-color: rgba(11, 25, 87, 0.15); /* light mode shadow */
+    --accent: #4DA3FF; 
+    --soft: #F8F0E5; 
+    --shadow-color: rgba(11, 25, 87, 0.15); 
 }
 
 body.dark {
-    --bg: #0B1020; /* Dark background color */
-    --navy: #E6D8C7; /* Font color */
-    --accent: #5784E6; /* Accent color */
-    --soft: #151A2E; /* Background color */
-    --shadow-color: rgba(255, 255, 255, 0.15); /* dark mode shadow */
+    --bg: #1F1F1F; /* Dark background color #0B1020*/
+    --navy: #FFFFFF; /* Font color #E6D8C7*/
+    --accent: #4DA3FF; /* Accent color 4DA3FF*/
+    --soft: #0A1A2F; /* Background color #151A2E*/
+    --shadow-color: rgba(255, 255, 255, 0.1); 
 }
 
 body,
@@ -21,6 +21,7 @@ body * {
         color 0.35s ease,
         border-color 0.35s ease,
         box-shadow 0.35s ease;
+        opacity: 0.9s ease;
 }
 
 body {

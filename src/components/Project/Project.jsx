@@ -3,7 +3,8 @@ import { IoMdClose } from 'react-icons/io';
 import { FiExternalLink, FiGithub } from 'react-icons/fi';
 import { FaNodeJs, FaHtml5, FaCss3Alt } from 'react-icons/fa';
 import { SiReact, SiExpress, SiMongodb, SiTailwindcss, SiTypescript, SiDjango } from 'react-icons/si';
-import { TbCloudDataConnection } from "react-icons/tb";
+import { TbCloudDataConnection, TbCircleLetterR } from "react-icons/tb";
+import { BsFileBarGraphFill } from "react-icons/bs";
 
 import './Project.css';
 
@@ -72,7 +73,29 @@ const Project = () => {
             ],
             liveLink: null,
             githubLink: 'https://github.com/itsdran/spotify-history-viewer'
-        }
+        },
+        /*{
+            image: '/2022-Philippine-Presidential-Election-Analysis.png',
+            title: '2022 Philippine Presidential Election Analysis',
+            description: 'Data analysis and visualization of the 2022 Philippine Presidential Election',
+            fullDescription: 'This project analyzes and visualizes the 2022 Philippine Presidential Election results, providing insights into voter behavior, candidate performance, and regional voting patterns. Analyzed and visualized in R Programming, it features interactive charts and maps to explore election data in an engaging way.',
+            technologies: [
+                <TbCircleLetterR />
+            ],
+            liveLink: '/2022-philippine-presidential-election-analysis.html',
+            githubLink: 'https://github.com/itsdran/2022-Philippine-Presidential-Elections-Analysis'
+        },
+        {
+            image: '/2024-uber-ncr-analysis.png',
+            title: '2024 NCR Uber Analysis Dashboard',
+            description: 'Data analysis and visualization of Uber NCR 2024 ride data',
+            fullDescription: 'This project analyzes and visualizes Uber NCR 2024 ride data, providing insights into ride patterns, vehicle preferences, travel duration and length, regional trends, and customer satisfaction. Analyzed and visualized in R Programming, it features interactive charts and maps to explore ride data in an engaging way.',
+            technologies: [
+                <BsFileBarGraphFill />
+            ],
+            liveLink: '/2024-uber-ncr-analysis.pbix',
+            githubLink: 'https://github.com/itsdran/uber_ncr_2024_analysis'
+        }*/
     ];
 
     return (
@@ -118,7 +141,7 @@ const Project = () => {
                                                 rel="noopener noreferrer"
                                                 className="project-link live-link"
                                             >
-                                                <FiExternalLink /> Live Site
+                                                <FiExternalLink /> Live Project
                                             </a>
                                         )}
                                         {project.githubLink && (
@@ -177,7 +200,7 @@ const Project = () => {
                                         rel="noopener noreferrer"
                                         className="preview-link live-link"
                                     >
-                                        <FiExternalLink /> Check Live Site
+                                        <FiExternalLink /> Check Live Project
                                     </a>
                                 )}
                                 {selectedProject.githubLink && (
